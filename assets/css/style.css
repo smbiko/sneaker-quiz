@@ -139,6 +139,12 @@ img {
   transition: opacity 0.5s ease;
 }
 
+/* Changed the modal opacity to be seen */
+#modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 
 
 /* Adding a border with rounded corners and padding around the modal content */
