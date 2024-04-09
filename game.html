@@ -1,17 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Favicon -->
+    <!--- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!--Font awesome and google font -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    
-    <title>Document</title>
+    <!-- Page title -->
+    <title>Sneaker Quiz - Play</title>
+
 </head>
-<body>
-    
+
+<body class="flex-container">
+    <header>
+        <a href="index.html" class="logo">
+            <img class="logo" src="assets/images/logo.PNG" alt="sneaker quiz logo">
+        </a>
+    </header>
+
+    <!--  Outher Container that holds the content-->
+    <div id="outer-container">
+
+
+    <!-- Quiz Question and Buttons Container -->    
+    <div id="quiz-area" class="hide">
+        <div id="counter-area">
+            <p class="answer-count">Question NO: <span id="answer-no">1</span></p>
+            <p class="score-area">SCORE: <span id="score">0</span></p>
+        </div>
+        <section class="sneaker-showcase">
+            <div class="wrapper">
+                <div class="sneaker">
+                    <div class="front"></div>
+                    <div class="side"></div>
+                    <div class="back"></div>
+                    <div class="frontleft"></div>
+                    <div class="shadow"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <hr>
+        <h2 id="question"></h2>
+
+        <div class="answer-btns btn-group">
+            <button class="btn answer-text" id="answer1"></button>
+            <button class="btn answer-text" id="answer2"></button>
+            <button class="btn answer-text" id="answer3"></button>
+            <button class="btn answer-text" id="answer4"></button>
+
+            <button id="next" class="btn next-btn hide">NEXT</button>  
+        </div>
+    </div>
+
+
+    <!-- End Quiz & Final Score Container-->
+    <div id="end-area" class="hide">
+        <h2>You Scored: <span id="final-score"></span></h2>
+        <p>Congratulations on completing the quiz!</p>
+        <div class="btn-group">
+            <a href="game.html" class="btn">Play Again?</a>
+            <a href="index.html" class="btn">Home</a>
+        </div>
+
+
+    </div>
+
+    </div>
+
+
+
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
