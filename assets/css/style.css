@@ -14,6 +14,7 @@
   --lightGrey: #EEEDEC;
   --grey: #8C928F;
   --silver: #8C8D93;
+  --green: #7C8C7C ;
 }
 
 
@@ -98,6 +99,12 @@ img {
   justify-content: space-around;
 }
 
+/* Counter Area - holds Question No & Score on Game Page */
+#counter-area {
+  display:flex;
+  justify-content: space-between;
+}
+
 .btn {
   font-family: 'Roboto', sans-serif;
   font-size: 0.75rem;
@@ -118,6 +125,30 @@ img {
   box-shadow: -2px -2px 5px #262525 inset;
 }
 
+/*----- CLASSES TO ADD AND REMOVE -------*/
+
+/* Hide from display */
+.hide {
+  display: none;
+}
+
+/* Styling for correct choice */
+.correct {
+  border: #7C8C7C 1rem solid;
+}
+
+/* Styling for incorrect choice */
+.incorrect {
+  border:#EB3947;
+}
+
+.correctbtn {
+  background-color: #7C8C7C;
+}
+
+.incorrect {
+  background-color:#EB3947;
+}
 
 /*---------- Modal ----------*/
 /* created using tutorial - https://www.youtube.com/watch?v=XH5OW46yO8I
@@ -151,7 +182,7 @@ img {
   border: #EB3947 5px solid;
   border-radius: 1.5rem;
   padding: 2rem;
-  color: #8C928F;
+  color: #262525;
   text-align: center;
 }
 
