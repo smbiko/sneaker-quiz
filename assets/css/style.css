@@ -1,10 +1,13 @@
 /*--- Google Fonts Import---*/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'):root {
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap')
+
+
+:root {
 
   /*---- Typography -----*/
-  --header-text: 'Montserrat', sans-serif;
-  --content-text: 'Roboto', sans-serif;
+  --content-text: 'Nova Square', cursive;
 
   /*---- Colours ---*/
 
@@ -14,7 +17,7 @@
   --lightGrey: #EEEDEC;
   --grey: #8C928F;
   --silver: #8C8D93;
-  --green: #7C8C7C ;
+  --green: #7C8C7C;
 }
 
 
@@ -24,6 +27,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Nova Square', cursive;
+  font-size: 62.5%;
 }
 
 /* Backgroud image and Backup colour */
@@ -32,21 +37,21 @@ body {
   background-image: url("../images/background.jpg");
   background-color: #262525;
   background-size: cover;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nova Square', cursive;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 4.2rem;
   text-align: center;
-  font-weight: 400;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
 p {
   text-align: center;
   font-size: 1rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: 1.5rem;
 }
 
 /*---- Header ---*/
@@ -75,6 +80,9 @@ img {
   height: 100vh;
   justify-content: center;
   align-content: center;
+  align-items: center;
+  text-align: center;
+  
 }
 
 /* Outer Container */
@@ -97,32 +105,52 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  font-size: 1.5rem;
+
 }
 
 /* Counter Area - holds Question No & Score on Game Page */
 #counter-area {
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 
 .btn {
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-family: 'Nova Square', courier, monospace;
+  font-size: 2.45rem 0;
   text-align: center;
-  padding: 0.75rem;
-  background-color: #262525;
+  padding: 1.5rem;
+  background: linear-gradient(90deg, rgba(38, 37, 37, 1) 0%, rgba(0, 10, 37, 1) 100%);
   border-radius: 2rem;
   color: #EEEDEC;
   margin: 0.3rem;
   box-shadow: -2px -2px 5px #EEEDEC inset;
+  text-decoration: none;
+  width: 30rem;
 
 }
 
 .btn:hover {
+  cursor: pointer;
   background-color: #fafafa;
-  color: #262525;
-  box-shadow: -2px -2px 5px #262525 inset;
+  color: rgba(124, 140, 124, 1);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(124, 140, 124, 1) ;
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+#highscore-btn {
+  background: linear-gradient(90deg, rgba(140, 141, 147, 1) 0%, rgba(130, 136, 140, 1) 100%);
+}
+
+#highscore-btn:hover {
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(38, 37, 37, 1) ;
+
 }
 
 /*----- CLASSES TO ADD AND REMOVE -------*/
@@ -139,7 +167,7 @@ img {
 
 /* Styling for incorrect choice */
 .incorrect {
-  border:#EB3947;
+  border: #EB3947;
 }
 
 .correctbtn {
@@ -147,7 +175,7 @@ img {
 }
 
 .incorrect {
-  background-color:#EB3947;
+  background-color: #EB3947;
 }
 
 /*---------- Modal ----------*/
@@ -191,91 +219,78 @@ img {
   margin-top: 3rem;
 }
 
-/* Sneaker rotating on the shadow */
-body {
-  margin: 0;
+
+/*------ GAME HTML STYLING---*/
+
+
+
+/*-------MEDIA QUERIES------*/
+/* TABLETS */
+
+@media only screen and (min-width : 481px) {
+
+  h1 {
+    font-size: 5rem;
+    padding-top: 1rem;
+  }
+
+  #outer-container {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+  }
+
+  #modal-content {
+    padding: 1.5rem;
+  }
+
+  input {
+    font-size: 1.5rem;
+  }
+
+  li {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .correct {
+    border: #7C8C7C 1rem solid;
+  }
+
+  /* Stytling for incorrect choice*/
+  .incorrect {
+    border: #EB3947 1rem solid;
+  }
+
 }
 
-.sneaker-showcase {
+/* Laptops */
+@media only screen and (min-width : 769px) {
 
-  background: #fafafa;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 4px;
-  position: relative;
-  overflow: hidden;
-}
+  h1 {
+    font-size: 6rem;
+    padding-top: 1.5rem;
+  }
 
-.sneaker-showcase::before {
-  content: '';
-  position: absolute;
-  top: -30vh;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: #fafafa;
-}
+  p {
+    padding-bottom: 1.75rem;
+  }
 
-.wrapper {
-  perspective: 1000px;
-}
+  #modal-content {
+    padding: 4rem;
+  }
 
-.sneaker {
-  
-  transform-style: preserve-3d;
-  width: 25em;
-  height: 40.5em;
-  /* Center the shoe */
-  transform-origin: center;
-  position: relative;
-  
-}
-
-.sneaker>div {
-  position: absolute;
-  height: 40.5em;
-}
-
-/*Positioning each side in 3D space*/
-.front {
-  width: 25em;
-  background: url(../images/air-jordan-4-left.png);
-  transform: translate3d(0, 0, 2.1875em);
-}
-
-.back {
-  width: 25em;
-  background: url(../images/airjordan4-right.PNG);
-  transform:
-    rotateY(180deg) translate3d(0, 0, 2.1875em);
-}
-
-.side {
-  width: 4.375em;
-  transform: rotateY(-90deg) translate3d(0, 0, 2.1875em);
-  background: url(../images/airjordan4-frontleft.png);
-}
-
-.frontleft {
-  width: 4.375em;
-  background: #ccc;
-  transform:rotateY(90deg) translate3d(0, 0, 24.9em);
-  transform-origin: bottom;
-}
-
-.book .shadow {
-  width: 27.0625em;
-  height:  4.375em;
-  background: radial-gradient(
-    rgba(0, 0, 0, 0.4),transparent
-  );
-  transform:rotateX(90deg) translate3d(0, 22.1875em, -38em);
-  transform-origin: bottom;
-}
-.front, .back, .side {
-  background-size: cover;
-  /*Prevents Default Image Dragging*/
-  pointer-events: none;
 }

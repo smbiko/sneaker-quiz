@@ -1,0 +1,33 @@
+
+
+/*--- Containers ---------*/
+
+/* Flex container*/
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+  
+  /* Outer Container */
+  
+  #outer-container {
+    background-color: #262525;
+    opacity: 0.9;
+    width: 80%;
+    margin: auto;
+    margin-top: 0;
+    padding: 1rem;
+    color: #fafafa;
+    border-radius: 1.5rem;
+  }
+
+  .choice-container {
+    
+  }
