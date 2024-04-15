@@ -7,7 +7,7 @@
 :root {
 
   /*---- Typography -----*/
-  --content-text: 'Nova Square', cursive;
+  --content-text: 'Nova Square', sans;
 
   /*---- Colours ---*/
 
@@ -27,7 +27,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Nova Square', cursive;
+  font-family: 'Nova Square', sans;
   font-size: 62.5%;
 }
 
@@ -37,20 +37,25 @@ body {
   background-image: url("../images/background.jpg");
   background-color: #262525;
   background-size: cover;
-  font-family: 'Nova Square', cursive;
+  font-family: 'Nova Square', sans;
+}
+
+h1 {
+  font-size: 3.8rem;
+  padding-top: 1.5rem;
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 3.2rem;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 p {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
@@ -92,7 +97,7 @@ img {
   opacity: 0.9;
   width: 80%;
   margin: auto;
-  margin-top: 0;
+  margin-top: -10px;
   padding: 1rem;
   color: #fafafa;
   border-radius: 1.5rem;
@@ -109,24 +114,18 @@ img {
 
 }
 
-/* Counter Area - holds Question No & Score on Game Page */
-#counter-area {
-  display: flex;
-  justify-content: space-between;
-}
-
 .btn {
-  font-family: 'Nova Square', courier, monospace;
+  font-family: 'Nova Square', sans;
   font-size: 2.45rem 0;
   text-align: center;
   padding: 1.5rem;
   background: linear-gradient(90deg, rgba(38, 37, 37, 1) 0%, rgba(0, 10, 37, 1) 100%);
   border-radius: 2rem;
-  color: #EEEDEC;
+  color: rgba(238, 237, 236, 1);
   margin: 0.3rem;
-  box-shadow: -2px -2px 5px #EEEDEC inset;
+  box-shadow: -2px -2px 5px rgba(238, 237, 236, 1) inset;
   text-decoration: none;
-  width: 30rem;
+  
 
 }
 
@@ -153,30 +152,8 @@ img {
 
 }
 
-/*----- CLASSES TO ADD AND REMOVE -------*/
 
-/* Hide from display */
-.hide {
-  display: none;
-}
 
-/* Styling for correct choice */
-.correct {
-  border: #7C8C7C 1rem solid;
-}
-
-/* Styling for incorrect choice */
-.incorrect {
-  border: #EB3947;
-}
-
-.correctbtn {
-  background-color: #7C8C7C;
-}
-
-.incorrect {
-  background-color: #EB3947;
-}
 
 /*---------- Modal ----------*/
 /* created using tutorial - https://www.youtube.com/watch?v=XH5OW46yO8I
@@ -190,7 +167,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #8C928F;
+  background-image: url("../images/background.jpg");
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s ease;
@@ -207,6 +184,7 @@ img {
 /* Adding a border with rounded corners and padding around the modal content */
 #modal-content {
   width: 80%;
+  background-image: url("../images/background.jpg");
   border: #EB3947 5px solid;
   border-radius: 1.5rem;
   padding: 2rem;
@@ -217,10 +195,9 @@ img {
 /* adding margin to top of close modal button */
 #close-modal {
   margin-top: 3rem;
+
+
 }
-
-
-/*------ GAME HTML STYLING---*/
 
 
 
@@ -266,15 +243,8 @@ img {
     padding-bottom: 0.5rem;
   }
 
-  .correct {
-    border: #7C8C7C 1rem solid;
-  }
-
-  /* Stytling for incorrect choice*/
-  .incorrect {
-    border: #EB3947 1rem solid;
-  }
-
+  
+ 
 }
 
 /* Laptops */
