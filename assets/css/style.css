@@ -167,6 +167,7 @@ img {
   justify-content: center;
   align-items: center;
   background-image: url("../images/background.jpg");
+  background-size: cover;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s ease;
@@ -183,7 +184,7 @@ img {
 /* Adding a border with rounded corners and padding around the modal content */
 #modal-content {
   width: 80%;
-  background-image: url("../images/background.jpg");
+  background: rgba(238, 237, 236, 1);
   border: #EB3947 5px solid;
   border-radius: 1.5rem;
   padding: 2rem;
