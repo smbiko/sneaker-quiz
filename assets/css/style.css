@@ -41,7 +41,7 @@ body {
 }
 
 h1 {
-  font-size: 3.8rem;
+  font-size: 2.8rem;
   padding-top: 1.5rem;
 }
 
@@ -110,7 +110,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-size: 1.5rem;
+  font-size: 2rem;
 
 }
 
@@ -125,7 +125,6 @@ img {
   margin: 0.3rem;
   box-shadow: -2px -2px 5px rgba(238, 237, 236, 1) inset;
   text-decoration: none;
-  
 
 }
 
@@ -135,7 +134,7 @@ img {
   color: rgba(124, 140, 124, 1);
   box-shadow: 0 0.4rem 1.4rem 0 rgba(124, 140, 124, 1) ;
   transition: transform 150ms;
-  transform: scale(1.03);
+  transform: scale(1.0);
 }
 .btn[disabled]:hover {
   cursor: not-allowed;

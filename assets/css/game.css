@@ -32,6 +32,7 @@
     font-size: 2.45rem 0;
     text-align: center;
     padding: 1.5rem;
+    
     background: linear-gradient(90deg, rgba(38, 37, 37, 1) 0%, rgba(0, 10, 37, 1) 100%);
     border-radius: 2rem;
     color: rgba(238, 237, 236, 1);
@@ -39,7 +40,6 @@
     box-shadow: -2px -2px 5px rgba(238, 237, 236, 1) inset;
     text-decoration: none;
    
-
 }
 
 .choice-container:hover {
