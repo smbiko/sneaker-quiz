@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>High Scores</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="highscores.css">
-    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/highscores.css">
+    
 </head>
-<body>
-    <div class="outer-container">
-        <div id="highscores" class="flex-center flex-column"></div>
-        <h1 id="finalscore">Leaderboard</h1>
+<body class="flex-container">
+    <header>
+        <a href="index.html" class="logo">
+            <img class="logo" src="assets/images/logo.PNG" alt="sneaker quiz logo">
+        </a>
+    </header>
+    <div id="outer-container">
+        <div id="highScores" class="flex-center flex-column"></div>
+        <h2 id="finalScore">Leaderboard</h2>
         <ul id="highScoresList"></ul>
         <a href="/index.html" class="btn">Go Home</a>
     </div>
 
-    <script src="highscores.js"></script>
+    <script src="assets/js/highscores.js"></script>
+    <script src="assets/js/end.js"></script>
 </body>
 </html>

@@ -9,9 +9,15 @@
 </head>
 
 <body>
+    <header>
+        <a href="index.html" class="logo">
+            <img class="logo" src="assets/images/logo.PNG" alt="sneaker quiz logo">
+        </a>
+    </header>
+    <div id="outer-container">
     <div class="container">
-        <div id="end-area" class="flex-center flex-column">
-            <h2>You Scored: <span id="final-score"></span></h2>
+        <div id="end" class="flex-center flex-column">
+            <h2 id="finalScore"> 0 </h2>
             <form class="end-form-container">
                 <h2 id="end-text">Enter your name below to save your score!</h2>
                 <input type="text" name="name" id="username" placeholder="Enter your name">
@@ -20,11 +26,14 @@
             <p>Congratulations on completing the quiz!</p>
             <div class="btn-group">
                 <a href="game.html" class="btn">Play Again?</a>
-                <a href="index.html" class="btn">Home</a>
+                <a href="index.html" class="btn">Go Home</a>
             </div>
         </div>
     </div>
-    <script src="end.js"></script>
+</div>
+    <script src="assets/js/end.js"></script>
+    <script src="assets/js/game.js"></script>
+
 </body>
 
 </html>
