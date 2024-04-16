@@ -86,4 +86,21 @@ I created wireframes to visualize my ideas using [Figma](docs/wireframe/wirefram
 
 As the pages of the site have a background image, I wanted to keep the colour scheme used on the site quite small so as to not overwhelm users. Red and white  are very typical colours in use.
 
-Then I used http://colormind.io/to find matching colors for my scheme. After picking out my five main colors I used [contrast-grid.eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%2383a603%0D%0A%231b4001%0D%0A%23f0deb4%0D%0A%23f6f7eb%0D%0A%23001e1d&es-color-form__tile-size=regular&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to check the contrast and possible color combinations.
+Then I used http://colormind.io/ to find matching colors for my scheme. After picking out my five main colors I used [contrast-grid.eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=262525%0D%0AEB3947%0D%0AEEEDEC%0D%0A8C928F%0D%0A8C8D93%0D%0A%237C8C7C&es-color-form__tile-size=regular&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to check the contrast and possible color combinations.
+
+![Color contrast](assets/images/media/colour-schemes.png)
+
+### **Fonts**
+
+Google Fonts was used to import the chosen fonts for use in the site.
+
+- For the Page Title I have used the google font Nova Square. Nova Square  is a stunning font family that offers a wealth of creative possibilities.
+
+- For the body of the page I have used the google font nova square to keep the pages typography uniform.
+
+### **Logo and Images**
+
+After choosing my colors and fonts I wanted to make a simple Logo for my website.
+
+![The Sneaker Logo](assets/images/logo.PNG)
+
