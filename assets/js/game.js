@@ -112,7 +112,7 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.href = '/sneaker-quiz/end.html'
+        return window.location.href = 'end.html'
     }
 
     questionCounter++
