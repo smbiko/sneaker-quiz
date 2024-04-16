@@ -1,21 +1,8 @@
 
 
+  
 
 /*--- Containers ---------*/
-
-/* Flex container*/
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-
-}
-
 /* Outer Container */
 
 #outer-container {
@@ -31,17 +18,19 @@
 
 .choice-container {
 
-    font-family: 'Nova Square', courier, monospace;
-    font-size: 2.45rem 0;
+    font-family: 'Nova Square', sans;
+    font-size: 0.75rem;
+    font-weight: 500;
     text-align: center;
-    padding: 1.5rem;
-
+    padding: 0.75rem;
     background: linear-gradient(90deg, rgba(38, 37, 37, 1) 0%, rgba(0, 10, 37, 1) 100%);
     border-radius: 2rem;
     color: rgba(238, 237, 236, 1);
     margin: 0.3rem;
     box-shadow: -2px -2px 5px rgba(238, 237, 236, 1) inset;
-    text-decoration: none;
+    cursor: pointer;
+    width: 100%; 
+    height: 90%;
 
 }
 
@@ -65,11 +54,11 @@ choice-text {
 }
 
 .correct {
-    background: linear-gradient(32deg, rgb(33, 147, 33) 0%, rgb(8, 110, 8) 100%)
+    background: linear-gradient(32deg, rgb(33, 147, 33) 0%, rgb(8, 110, 8) 100%) 1rem;
 }
 
 .incorrect {
-    background: linear-gradient(32deg, rgba(235, 57, 71, 1) 0%, rgb(110, 8, 17) 100%)
+    background: linear-gradient(32deg, rgba(235, 57, 71, 1) 0%, rgb(110, 8, 17) 100%) 1rem;
 }
 
 /* Counter Area */
@@ -77,22 +66,25 @@ choice-text {
 #counter-area {
     display: flex;
     justify-content: space-between;
+
 }
 
 .counter-area-prefix {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
+
 }
 
 .counter-area-main-text {
     text-align: center;
+    margin-top: 0.5rem;
 }
 
 #progressBar {
-    width: 20rem;
-    height: 3rem;
+    width: 90%;
+    height: 1rem;
     border: 0.2rem solid rgb(33, 147, 33);
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     border-radius: 50px;
     overflow: hidden;
 }
@@ -105,7 +97,5 @@ choice-text {
 }
 
 @media screen and (max-width: 768px) {
-    .choice-container {
-        min-width: 30rem;
-    }
+    
 }

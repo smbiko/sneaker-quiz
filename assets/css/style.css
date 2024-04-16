@@ -27,8 +27,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Nova Square', sans;
-  font-size: 62.5%;
+  
 }
 
 /* Backgroud image and Backup colour */
@@ -41,22 +40,26 @@ body {
 }
 
 h1 {
-  font-size: 2.8rem;
-  padding-top: 1.5rem;
+  font-family: 'Nova Square', sans;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-top: 0.5rem;
+
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 1rem;
   text-align: center;
+  font-weight: 300;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin-bottom: 2rem;
+  
 }
 
 p {
   text-align: center;
-  font-size: 1.5rem;
-  padding-bottom: 1.5rem;
+  font-size: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 /*---- Header ---*/
@@ -70,7 +73,7 @@ header {
 
 img {
   max-width: 100%;
-  margin-top: -80px;
+  margin-top: -50px;
   margin-bottom: 0px;
 }
 
@@ -97,11 +100,13 @@ img {
   opacity: 0.9;
   width: 80%;
   margin: auto;
-  margin-top: -10px;
   padding: 1rem;
   color: #fafafa;
   border-radius: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 20%;
 }
+
 
 /*---- Button Styling ----*/
 
@@ -110,26 +115,26 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-size: 2rem;
-
+  
 }
 
 .btn {
   font-family: 'Nova Square', sans;
-  font-size: 2.45rem 0;
+  font-size: 0.75rem;
+  font-weight: 500;
   text-align: center;
-  padding: 1.5rem;
+  padding: 0.75rem;
   background: linear-gradient(90deg, rgba(38, 37, 37, 1) 0%, rgba(0, 10, 37, 1) 100%);
   border-radius: 2rem;
   color: rgba(238, 237, 236, 1);
   margin: 0.3rem;
   box-shadow: -2px -2px 5px rgba(238, 237, 236, 1) inset;
   text-decoration: none;
-
+  cursor: pointer;
+ 
 }
 
 .btn:hover {
-  cursor: pointer;
   background-color: #fafafa;
   color: rgba(124, 140, 124, 1);
   box-shadow: 0 0.4rem 1.4rem 0 rgba(124, 140, 124, 1) ;
@@ -283,7 +288,7 @@ input::placeholder {
     padding-bottom: 0.5rem;
   }
 
-
+  
 }
 
 
