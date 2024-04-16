@@ -1,6 +1,6 @@
 
 /*----  GAME -----*/
-/*----- https://www.youtube.com/watch?v=f4fB9Xg2JEY ----*/
+/*----- created using tutorial https://www.youtube.com/watch?v=f4fB9Xg2JEY ----*/
 
 
 const question = document.querySelector('#question');
