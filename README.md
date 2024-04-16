@@ -1,39 +1,89 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Sneaker Quiz
 
-Welcome,
+## PROJECT OVERVIEW
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Link to live project](https://smbiko.github.io/sneaker-quiz/) 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+Welcome to the Sneaker Quiz, where your passion for sneakers meets the thrill of trivia! Lace up your favorite kicks and get ready to put your sneaker knowledge to the test. From iconic releases to legendary collaborations, this quiz is designed for sneakerheads of all levels. Are you ready to step up to the challenge and prove that you're the ultimate sneaker aficionado? Let's dive in and see if you can ace every question!
 
-## Codeanywhere Reminders
+![Responsive Mockup](assets/images/media/frames.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## **Table of contents**
 
-`python3 -m http.server`
+- [**The Sneaker Quiz**](#Sneaker Quiz)
+  - [**Table of contents**](#table-of-contents)
+  - [**Planning**](#planning)
+    - [**External user goals**](#external-user-goals)
+    - [**Site owner goals**](#site-owner-goals)
+    - [**User Stories**](#user-stories)
+    - [**Features to achieve the goals**](#features-to-achieve-the-goals)
+    - [**Wireframes**](#wireframes)
+    - [**Color Scheme**](#color-scheme)
+    - [**Fonts**](#fonts)
+    - [**Logo and Images**](#logo-and-images)
+  - [**Features**](#features)
+    - [**Header**](#header)
+    - [**Home Page**](#home-page)
+    - [**Game Page**](#game-page)
+    - [**End Page**](#end-page)
+    - [**Highscore Page**](#highscore-page)
+    - [**Custom 404 Page**](#custom-404-page)
+    - [**Future Enhancements**](#future-enhancements)
+- [**Testing**](#testing)
+    - [**Manual Testing**](#manual-testing)
+    - [**Issues**](#issues)
+    - [**Validation**](#validation)
+        - [**HTML**](#html)
+        - [**CSS**](#css)
+    - [**Lighthouse Testing**](#lighthouse-testing)
+    - [**Accessibility Testing**](#accessibilty-testing)
+    - [**User Story Testing**](#user-story-testing)
+- [**Deployment**](#deployment)
+- [**Credits**](#credits)
+    - [**Content**](#content)
+    - [**Media and Design**](#media-and-design)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+  ## **Planning**
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
 
-`http_server`
+  ### **External user goals**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- I want to take part in a sneaker quiz online and improve my general knowledge. I want to be able to play at any time, anywhere.
+- I want the site to be responsive to my device.
+- I want the site to be easy to navigate.
+- I want to be able to log my high scores to see how I am performing.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+  ### **Site owner goals**
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  - provide test sneaker heads with whether they understand the general knowledge of sneakers
+  - get people to sign up for events
 
-To log into the Heroku toolbelt CLI:
+    ### **User Stories**
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    - As a user, I want to navigate the quiz using multiple devices.
+    - As a user, I want to find general information about the quiz.
+    - As a user, I want to find out whats my score
+    - As a user, I want to find how many questions did I get right and wrong .
+    - As a user, I want to find my score after playing the game.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
----
+### **Features to achieve the goals**
 
-Happy coding!
+The website is comprised of a home page, a games page, a high scores page, a 404 error page .
+
+All Pages on the website are responsive and have:
+    - The website will be built with a mobile-first approach, to ensure it is responsive. I will also test it on various devices and screen sizes.
+    - General information about the quiz like how to play  will be included in the home page .
+    - A favicon in the browser tab.
+    - The title of the site at the top of every page. This title also acts as a link back to the home page.
+
+
+### **Wireframes**
+
+I created wireframes to visualize my ideas using [Figma](docs/wireframe/wireframe.png) . As I want to stick to the mobile-first approach I created wireframes for mobile.
+
+### **Color Scheme**
+
+As the pages of the site have a background image, I wanted to keep the colour scheme used on the site quite small so as to not overwhelm users. Red and white  are very typical colours in use.
+
+Then I used http://colormind.io/to find matching colors for my scheme. After picking out my five main colors I used [contrast-grid.eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%2383a603%0D%0A%231b4001%0D%0A%23f0deb4%0D%0A%23f6f7eb%0D%0A%23001e1d&es-color-form__tile-size=regular&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to check the contrast and possible color combinations.
