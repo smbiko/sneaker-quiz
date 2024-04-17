@@ -35,6 +35,7 @@ Welcome to the Sneaker Quiz, where your passion for sneakers meets the thrill of
     - [**Validation**](#validation)
         - [**HTML**](#html)
         - [**CSS**](#css)
+        - [**JS**](#js)
     - [**Lighthouse Testing**](#lighthouse-testing)
     - [**Accessibility Testing**](#accessibilty-testing)
     - [**User Story Testing**](#user-story-testing)
@@ -152,7 +153,7 @@ The high scores page displays the sites name as a title. This also acts as a lin
 
 The 404 error page displays the sites name as a title. This also acts as a link back to the home page. Within the page container there is a sorry message explaining to the user that there has been an error directing them to the page they were looking for. 
 
-![Error page image]()
+![Error page image](assets/images/media/404screen.png)
 
 ### **Future Enhancements**
 
@@ -164,6 +165,136 @@ In future implementations I would like to
 4. Implement different difficulty levels for the quiz, ranging from beginner to expert.
 
 
+## **Testing**
+
+### **Manual Testing**
+
+During development I made use of google developer tools to ensure everything was working correctly and to assist with troubleshooting when things were not working as expected. While implementing new features I had the website open in **Google Chrome**, resizing the browser using *Dev Tools*. I also opened the website on my phone and tablet after pushing new features.
+
+## **Devices**
+
+Below are the various devices and browsers I tested my website for responsiveness on after it was deployed.
+
+- 24-inch Desktop Monitor
+
+    ![24 Inch.png](assets/images/media/testing/24inch.png)
+
+- iPad Pro
+    
+    ![iPad Pro.png](assets/images/media/testing/Ipad-pro.png)
+    
+- iPhone 12
+
+    ![iPhone 12.png](assets/images/media/testing/iphone12pro.png)
+
+- Samsung S20
+
+    ![Samsung Galaxy s20.png](assets/images/media/testing/samsung-galaxys20.png)
+
+### **Browsers**
+
+- Google Chrome
+
+    ![Google Chrome.png](assets/images/media/testing/google.png)
+
+- Safari
+    
+    ![Safari.png](assets/images/media/testing/safari.png)
+
+
+`Home Page`
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| The Sites title | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
+| How to play button | Displays the modal with the instructions on how to play the game | Clicked on button | Modal with instructions on how to play opens | Pass |
+| Modal close button | Closes the modal | Clicked on close button | Modal closed | Pass |
+| Play Button | Directs the user to the game page | Clicked on button | Game page opens to display the game | Pass |
+| High Scores Button | Directs the user to the high scores page | Clicked on button | Directs to the high scores page | Pass |
+| All buttons - hover effect | All black buttons with white text should transform the border to highlight. | Hover over each button on the page | Each button displayed the correct styling when hovered over | Pass |
+
+
+
+`Game Page - Quiz Area`
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| The Sites title | Link directs the user back to the home page | Clicked title | directed back to home page | Pass |
+| All buttons - hover effect | All buttons with a black background & white text should change when hovered over to a background  border colour of white . | Hover over each button on the page | Each button displayed the correct styling when hovered over | Pass |
+| Pointer Cursor | The pointer should display when a user moves the mouse over a button | Moved the mouse over each button to check the cursor changed upon entering the button | The cursor changed from the arrow cursor to the pointer cursor | Pass |
+| Question populated | The question from the game.js is correctly pulled from the  data |  check that the question has been pulled correctly | The question is displaying | Pass |
+| Answers populated | The answers from the game.js are correctly pulled from the  data | check that the answers have been pulled correctly | The answers are displaying | Pass |
+| Data attribute correct | The data attribute correct has been applied to the correct answer | By console logging the data I am able to check what the correct answer should be. I can then console.log the id of the buttons to check whether the data attribute has been applied only to the button containing the correct answer | only the correct answer has the correct attribute | Pass |
+| Correct answer - button colour | When a correct answer is clicked the button should change background colour to green | Clicked a correct answer | Button background turned green | Pass |
+| Incorrect answer - button colour | When an incorrect answer is clicked the clicked buttons background should turn red | Clicked incorrect answer | Button background turned red | Pass |
+| Question No counter | The Question No counter should start at 1 and increase by 1 . | answered questions  | Each time the choice is clicked the Answer no counter increases by 1. | Pass |
+| Score Counter | The score counter should begin at 0. Each time a correct answer is selected the score should increase by 100. If an incorrect answer is selected the score should remain the same | Clicked a correct answer to check if the score increased. Clicked an incorrect answer to check the score stayed the same| When a correct answer was selected the score increased by 100. When an incorrect score was selected the score stayed the same | Pass |
+| Not Allowed Cursor | Once an choice has been selected, the answer buttons should then be disabled  | Clicked on choice button and then clicked on the remaining answer buttons | After the answer was selected each answer button clicked on subsequently could not select the other options | Pass |
+
+
+`Game Page - End of Quiz`
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| The Sites title | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
+| All buttons - hover effect | All buttons with a black background & white text should change when hovered over to a background that highlights. | Hover over each button on the page | Each button displayed the correct styling when hovered over | Pass |
+| Pointer Cursor | The pointer should display when a user moves the mouse over a button | Moved the mouse over each button to check the cursor changed upon entering the button | The cursor changed from the arrow cursor to the pointer cursor | Pass |
+| Score Display | The Your Score area should populate with the score you have achieved | I added my score as I played, checked the score on the last question & compared to the score displayed | The score displays correctly | Pass |
+| Submit Button - enabled/disabled | The submit button should be disabled and show the not allowed cursor by default. Once the user types their name into the input field the button is enabled | I hovered over and clicked the submit button without filling in the name field. I then added a name, hovered over and clicked the submit button | Without a name filled in the cursor displays as not allowed and the button will not submit. Once I filled in a name the cursor became a pointer when hovered over the button and I was able to click and submit the score | Pass |
+| Play again? button | Clicking on this button will return you to the start of the game page where you can play the quiz again | Clicked on the play again? button | Directed to the beginning of the game  | Pass |
+| Home button | Clicking on this button will take you back to the home page | Clicked the home button | Directed back to the home page | Pass |
+
+`High Scores Page`
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| The Sites title | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
+| All buttons - hover effect | All buttons with a black background & white text should change when hovered over to a background colour of white with black text. | Hover over each button on the page | Each button displayed the correct styling when hovered over | Pass |
+| Pointer Cursor | The Pointer should display when a user moves the mouse over a button | Moved the mouse over each button to check the cursor changed upon entering the button | The cursor changed from the arrow cursor to the Pointer cursor | Pass |
+| Score Displayed | If your score is in the top five, your name and score will be displayed in the high scores area in descending order | Played 10+ games and logged a variety of scores. | Once 5 scores were displayed on the high scores board, only scores that were better than the ones logged would then be added to the board | Pass |
+| Play again? button | Takes the user to the beginning of the game page to select a difficulty level | Clicked the button | Taken to the beginning of the game page to select a difficulty level | Pass |
+| Home button | Takes the user to the home page | Clicked the button | Taken to the home page | Pass |
+
+`404 Error Page`
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| The Sites title | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
+| All buttons - hover effect | All buttons with a black background & white text should change when hovered over to a background colour of white with black text. | Hover over each button on the page | Each button displayed the correct styling when hovered over | Pass |
+| Pointer Cursor | The Pointer should display when a user moves the mouse over a button | Moved the mouse over each button to check the cursor changed upon entering the button | The cursor changed from the arrow cursor to the Pointer cursor | Pass |
+| Go home button | Takes the user back to the home page | Clicked the button | Taken to the home page | Pass |
+| Play button | Takes the user to the beginning of the game page | Clicked the button | Taken to the beginning of the game page to choose a difficulty level | Pass|
+
+
+
+### Testing User Stories
+
+
+
+| Goals | How are they achieved? |
+| :--- | :--- |
+| As a user, I want to navigate the quiz using multiple devices. | I have developed the site with responsiveness in mind.|
+| As a user, I want to find general information about the quiz. | have added a how to play modal to give information on how to play |
+| As a user, I want to find out whats my score. | Added a highscore page to provide highscore and also at the end of the game  |
+| As a user, I want to find how many questions did I get right and wrong . | Added a scores on the game and every right answer gains 100 every wrong annswer get 0 points  |
+| As a user, I want to find my score after playing the game. | Added a scores at the end of a game so user can find the total and can save it as well.  |
+
+
+### **Validation**
+
+### **HTML**
+
+
+### **CSS**
+
+### **JS**
+
+[jshint](https://jshint.com/) was used to validate the JavaScript.
+
+* [javascript.js](assets/images/media/testing/jshintmodal.png) - Passed.
+* [game.js](assets/images/media/testing/jshintgame.png)- Passed with most warnings about semi colons needed Javascript does not need to have semi colons . . It also stated that there are 4 unused variables, however these are being used.
+* [highscores.js](assets/images/media/testing/jshinthighscore.png) - Passed.
+* [end.js](assets/images/media/testing/jshintend.png) - Passed.
 
 
 
