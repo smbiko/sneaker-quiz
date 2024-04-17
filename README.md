@@ -118,7 +118,7 @@ After choosing my colors and fonts I wanted to make a simple Logo for my website
 
   The home page of The Sneaker Quiz displays the sites name as a title and then a container which holds some welcome text, including alerting the users that they can navigate back to the home page at any time by clicking on the page name. Below this are three buttons, how to play, play and high scores.
 
-![Home page image](assets/images/media/Homepage.png)
+![Home page image](assets/images/media/homepage.png)
 
 The how to play  button opens a modal showing the user how to play the game. The modal contains a close button which will close the modal, and show the home page again.
 
@@ -133,7 +133,7 @@ The play button will redirect the user to the game page  of their quiz and the h
 The game page displays the sites name as a title. This also acts as a link back to the home page. They will then be shown the quiz area. The quiz area contains the question and the 4  answer choices.
 When a user selects an answer, they will then be prevented from selecting any more answers. The quiz area border and the button selected will change styles depending on whether the answer selected was correct or incorrect.
 
-![Image of quiz area](assets/images/media/Quiz-area.png)
+![Image of quiz area](assets/images/media/quiz-area.png)
 
 ### **End Page**
 
@@ -145,7 +145,7 @@ Once a user has answered the 10 questions they will be taken to the end of the g
 
 The high scores page displays the sites name as a title. This also acts as a link back to the home page. The page then displays the high scores recorded - showing the name a user chooses and their score. The high scores page will list the top five scores recorded. 
 
-![High Scores Page Image](documentation/features/highscores.png)
+![High Scores Page Image](assets/images/media/highscore.png)
 
 
 ### **Custom 404 Page**

@@ -251,6 +251,11 @@ input::placeholder {
   border: none;
 }
 
+
+/*--  404 Page ----*/
+
+
+
 /*-------MEDIA QUERIES------*/
 /* TABLETS */
 
@@ -278,7 +283,6 @@ input::placeholder {
     padding-top: 1rem;
   }
 
-  
 
 
   h2 {
@@ -328,13 +332,16 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 
 }
 
 img {
-  max-width: 100%;
+  max-width: 50%;
   margin-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 
   h1 {
@@ -346,8 +353,23 @@ img {
     padding-bottom: 1.75rem;
   }
 
+  #outer-container {
+    background-color: #262525;
+    opacity: 0.9;
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+    color: #fafafa;
+    border-radius: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 20%;
+  }
+  
+
   #modal-content {
     padding: 4rem;
   }
+
+
 
 }
