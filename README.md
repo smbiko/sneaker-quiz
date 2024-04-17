@@ -284,8 +284,29 @@ Below are the various devices and browsers I tested my website for responsivenes
 
 ### **HTML**
 
+I used the [W3C Markup Validation Service](https://validator.w3.org/) to validate my HTML. I originally had some warnings because I had a spaces in between my image titles.
+
+![W3C Index HTML](docs/wireframe/testing/w3cindexhtml.png)
+
+I then renamed the images and most of the errors were rectified . 
+
+![W3c After Corrections](docs/wireframe/testing/w3caftercorrection.png)
+
+The full validation results can be found here:
+
+- [index.html](assets/images/media/testing/w3index.png) - Passed
+- [game.html](assets/images/media/testing/w3game.png) - Passed
+- [highscore.html](assets/images/media/testing/w3highscore.png) - Passed
+- [end.html](assets/images/media/testing/w3end.png) - Passed
+- [404.html](assets/images/media/testing/w3404.png) - Passed
+
 
 ### **CSS**
+
+[W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
+
+
+
 
 ### **JS**
 
@@ -297,6 +318,53 @@ Below are the various devices and browsers I tested my website for responsivenes
 * [end.js](assets/images/media/testing/jshintend.png) - Passed.
 
 
+### Lighthouse
+
+I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
+
+### Results
+
+
+![index.html](assets/images/media/testing/lighthouseindex.png)
+
+![game.html](assets/images/media/testing/lighthousegame.png)
+
+![highscores.html](assets/images/media/testing/lighthousehighscore.png)
+
+![404.html](assets/images/media/testing/lighthouse404.png)
+
+![end.html](assets/images/media/testing/lighthouse404.png)
+
+
+## **Deployment**
+
+I followed my mentor's tip and deployed my website early, after implementing the header. The steps to deploying a website on GitHub pages are:
+
+1. Open the [repository](https://github.com/smbiko/sneaker-quiz.git and go to the **Settings** tab.
+2. Navigate to the **Pages** tab in the left menu.
+3. Choose **Deploy from a branch** and select the according branch, *main* in my case.
+4. Click save. The link to the deployed website can then be found in the [repository](https://github.com/smbiko/sneaker-quiz.git) on the right menu under **Environments**.
+
+The link to my live site is: [The Sneaker Quiz](https://smbiko.github.io/sneaker-quiz/index.html)
+
+## **Credits**
+
+Thanks to my Code Institute Mentor Jubril Mentor for giving me valuable feedback and tips during this project.
+
+### **Content**
+
+- The content was written by myself and. using chatGPT  the images on the  .
+- I adapted my hamburger menu from a video with the according [Codepen](https://codepen.io/kevinpowell/pen/jxppmr) from Kevin Powell.
+
+### **Media and Design**
+
+- The images used for the website are taken from my past events held in 2023 and compressed using [iloveimg](https://www.iloveimg.com/) .
+- [Pixelied](https://pixelied.com/) was used to convert images to the *.webp* format.
+- I used Balsamiq to create Wireframes.
+- With [colormind.io](http://colormind.io/) I created a color scheme and used [contrast-grid.eightshapes.com] to check the contrast and possible color combinations.
+- The fonts were downloaded from Google Fonts.
+- The screenshot at the top of this document was taken from Am I Responsive?.
+-The Logo was designed on [Logo](https://logo.com/logos/artificial-intelligence) I used the colours from the background image 
 
 
 

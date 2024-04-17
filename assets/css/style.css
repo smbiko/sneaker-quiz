@@ -4,21 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap')
 
 
+
 :root {
 
-  /*---- Typography -----*/
-  --content-text: 'Nova Square', sans;
-
-  /*---- Colours ---*/
-
-  --white: #fafafa;
-  --black: #262525;
-  --red: #EB3947;
-  --lightGrey: #EEEDEC;
-  --grey: #8C928F;
-  --silver: #8C8D93;
-  --green: #7C8C7C;
+  --header: 'Nova Square', sans;
+  --content: 'Nova Square', sans-serif;
+  
 }
+
 
 
 /* Removes all margins & padding on everything so they can be fully customised */
@@ -27,7 +20,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
+
 }
 
 /* Backgroud image and Backup colour */
@@ -53,7 +46,7 @@ h2 {
   font-weight: 300;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  
+
 }
 
 p {
@@ -72,10 +65,10 @@ header {
 }
 
 img {
-  padding-top: 0.5rem ;
+  padding-top: 0.5rem;
   margin-top: 0px;
   margin-bottom: 0px;
-  width: 50%; 
+  width: 50%;
   height: auto;
 }
 
@@ -92,7 +85,7 @@ img {
   align-content: center;
   align-items: center;
   text-align: center;
-  
+
 }
 
 /* Outer Container */
@@ -117,7 +110,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
+
 }
 
 .btn {
@@ -133,16 +126,17 @@ img {
   box-shadow: -2px -2px 5px rgba(238, 237, 236, 1) inset;
   text-decoration: none;
   cursor: pointer;
- 
+
 }
 
 .btn:hover {
   background-color: #fafafa;
   color: rgba(124, 140, 124, 1);
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(124, 140, 124, 1) ;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(124, 140, 124, 1);
   transition: transform 150ms;
   transform: scale(1.0);
 }
+
 .btn[disabled]:hover {
   cursor: not-allowed;
   box-shadow: none;
@@ -154,7 +148,7 @@ img {
 }
 
 #highscore-btn:hover {
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(38, 37, 37, 1) ;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(38, 37, 37, 1);
 
 }
 
@@ -216,7 +210,7 @@ img {
   justify-content: center;
   align-content: center;
   text-align: center;
-  
+
 
 }
 
@@ -232,7 +226,7 @@ input {
 }
 
 input::placeholder {
-  color:rgba(38, 37, 37, 1)
+  color: rgba(38, 37, 37, 1)
 }
 
 #username {
@@ -243,7 +237,7 @@ input::placeholder {
 
 #end-text {
   font-size: 2rem;
-  color:#fafafa;
+  color: #fafafa;
   text-align: center;
 }
 
@@ -267,16 +261,16 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     text-align: center;
-  
+
   }
-  
+
   img {
     max-width: 50%;
     margin-top: 10px;
     margin-bottom: 0px;
-    
+
   }
-  
+
 
   h1 {
     font-size: 5rem;
@@ -328,21 +322,21 @@ input::placeholder {
 
   /*---- Header ---*/
 
-header {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
+  header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 
-}
+  }
 
-img {
-  max-width: 50%;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
+  img {
+    max-width: 50%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
 
   h1 {
     font-size: 6rem;
@@ -364,7 +358,7 @@ img {
     margin-top: 0;
     margin-bottom: 20%;
   }
-  
+
 
   #modal-content {
     padding: 4rem;
