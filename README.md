@@ -80,7 +80,7 @@ All Pages on the website are responsive and have:
 
 ### **Wireframes**
 
-I created wireframes to visualize my ideas using [Figma](docs/wireframe/wireframe.png) . As I want to stick to the mobile-first approach I created wireframes for mobile.
+I created wireframes to visualize my ideas using [Balsamiq](assets/images/media/colour-schemes.png) . As I want to stick to the mobile-first approach I created wireframes for mobile.
 
 ### **Color Scheme**
 
@@ -103,4 +103,71 @@ Google Fonts was used to import the chosen fonts for use in the site.
 After choosing my colors and fonts I wanted to make a simple Logo for my website.
 
 ![The Sneaker Logo](assets/images/logo.PNG)
+
+
+## **Features**
+
+* The title of the site at the top of every page. This title also acts as a link back to the home page.
+  ![The Sneaker Quiz Title](assets/images/media/logo-title.png)
+
+* A favicon in the browser tab.
+
+  ![favicon](assets/favicon/android-chrome-192x192.png)
+
+  ### **Home Page**
+
+  The home page of The Sneaker Quiz displays the sites name as a title and then a container which holds some welcome text, including alerting the users that they can navigate back to the home page at any time by clicking on the page name. Below this are three buttons, how to play, play and high scores.
+
+![Home page image](assets/images/media/Homepage.png)
+
+The how to play  button opens a modal showing the user how to play the game. The modal contains a close button which will close the modal, and show the home page again.
+
+![Modal open image](assets/images/media/modal.png)
+
+The play button will redirect the user to the game page  of their quiz and the high Scores button redirects the user to the high scores page.
+
+
+
+### **Game Page**
+
+The game page displays the sites name as a title. This also acts as a link back to the home page. They will then be shown the quiz area. The quiz area contains the question and the 4  answer choices.
+When a user selects an answer, they will then be prevented from selecting any more answers. The quiz area border and the button selected will change styles depending on whether the answer selected was correct or incorrect.
+
+![Image of quiz area](assets/images/media/Quiz-area.png)
+
+### **End Page**
+
+Once a user has answered the 10 questions they will be taken to the end of the game which will allow them to enter their  name and submit it to be entered onto the high scores page if it is in the top 5 scores. The submit button is disabled by default to prevent the user from submitting without a team name. 
+
+![End of game](assets/images/media/end.png)
+
+### **Highscore Page**
+
+The high scores page displays the sites name as a title. This also acts as a link back to the home page. The page then displays the high scores recorded - showing the name a user chooses and their score. The high scores page will list the top five scores recorded. 
+
+![High Scores Page Image](documentation/features/highscores.png)
+
+
+### **Custom 404 Page**
+
+The 404 error page displays the sites name as a title. This also acts as a link back to the home page. Within the page container there is a sorry message explaining to the user that there has been an error directing them to the page they were looking for. 
+
+![Error page image]()
+
+### **Future Enhancements**
+
+In future implementations I would like to
+
+1. Allow users to share their quiz results on social media platforms like Facebook or Twitter.
+2. Instead of a fixed set of questions, implement a dynamic question pool where questions are randomly selected from a larger database each time a user takes the quiz. 
+3. Allow users to create accounts and log in.
+4. Implement different difficulty levels for the quiz, ranging from beginner to expert.
+
+
+
+
+
+
+
+
 
