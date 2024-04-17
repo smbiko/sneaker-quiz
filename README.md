@@ -354,7 +354,7 @@ Thanks to my Code Institute Mentor Jubril Mentor for giving me valuable feedback
 ### **Content**
 
 - The content was written by myself and. using chatGPT  the images on the  .
-- I adapted my hamburger menu from a video with the according [Codepen](https://codepen.io/kevinpowell/pen/jxppmr) from Kevin Powell.
+-  I used [this You Tube tutorial](https://www.youtube.com/watch?v=XH5OW46yO8I) to learn how to create a modal for the how to play section.
 
 ### **Media and Design**
 
