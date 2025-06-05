@@ -1,7 +1,5 @@
-
 /*----  GAME -----*/
 /*----- created using tutorial https://www.youtube.com/watch?v=f4fB9Xg2JEY ----*/
-
 
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
@@ -9,13 +7,13 @@ const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 
-let currentQuestion = {}
-let acceptingAnswers = true
-let score = 0
-let questionCounter = 0
-let availableQuestions = []
+let currentQuestion = {};
+let acceptingAnswers = false;
+let score = 0;
+let questionCounter = 0;
+let availableQuestions = [];
 
-let questions = [
+const questions = [
     {
         question: 'What year did Nike release the iconic Air Jordan 1 sneaker?',
         choice1: '1985',
@@ -54,7 +52,7 @@ let questions = [
         choice2: 'Converse',
         choice3: 'Puma',
         choice4: 'Nike',
-        answer: 2,
+        answer: 4,
     },
     {
         question: 'What is the nickname of the Nike Air Max sneaker with visible air cushioning?',
@@ -77,7 +75,7 @@ let questions = [
         choice1: 'Vans',
         choice2: 'Adidas',
         choice3: 'New Balance',
-        choice4: ' Asics',
+        choice4: 'Asics',
         answer: 1,
     },
     {
@@ -96,69 +94,68 @@ let questions = [
         choice4: 'Suede',
         answer: 2,
     }
-]
+];
 
-const SCORE_POINTS = 100
-const MAX_QUESTIONS = 10
+const SCORE_POINTS = 100;
+const MAX_QUESTIONS = questions.length;
 
-startGame = () => {
-    questionCounter = 0
-    score = 0
-    availableQuestions = [...questions]
-    getNewQuestion()
+function startGame() {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    getNewQuestion();
 }
 
-getNewQuestion = () => {
+function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', score)
-
-        return window.location.href = 'end.html'
+        localStorage.setItem('mostRecentScore', score);
+        window.location.href = 'end.html';
+        return;
     }
 
-    questionCounter++
-    progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`
-    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`
+    questionCounter++;
+    progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
-    const questionIndex = Math.floor(Math.random() * availableQuestions.length)
-    currentQuestion = availableQuestions[questionIndex]
-    question.innerText = currentQuestion.question
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];
+    question.innerText = currentQuestion.question;
 
     choices.forEach(choice => {
-        const number = choice.dataset['number']
-        choice.innerText = currentQuestion['choice' + number]
-    })
+        const number = choice.dataset['number'];
+        choice.innerText = currentQuestion['choice' + number];
+    });
 
-    availableQuestions.splice(questionIndex, 1)
-
-    acceptingAnswers = true
+    availableQuestions.splice(questionIndex, 1);
+    acceptingAnswers = true;
 }
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        if (!acceptingAnswers) return
+        if (!acceptingAnswers) return;
 
-        acceptingAnswers = false
-        const selectedChoice = e.target
-        const selectedAnswer = selectedChoice.dataset['number']
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset['number'];
 
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+        const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
         if (classToApply === 'correct') {
-            incrementScore(SCORE_POINTS)
+            incrementScore(SCORE_POINTS);
         }
 
-        selectedChoice.parentElement.classList.add(classToApply)
+        selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(() => {
-            selectedChoice.parentElement.classList.remove(classToApply)
-            getNewQuestion()
-        }, 1000)
-    })
-})
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+        }, 1000);
+    });
+});
 
-incrementScore = num => {
-    score += num
-    scoreText.innerText = score
+function incrementScore(num) {
+    score += num;
+    scoreText.innerText = score;
 }
 
-startGame()
+startGame();
