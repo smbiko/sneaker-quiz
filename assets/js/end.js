@@ -1,3 +1,5 @@
+
+document.addEventListener('DOMContentLoaded', () => {
 const username = document.querySelector('#username');
 const saveScoreBtn = document.querySelector('#saveScoreBtn');
 const finalScore = document.querySelector('#finalScore');
@@ -32,3 +34,4 @@ function saveHighScore(e) {
     localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.href = 'highscores.html';
 }
+});

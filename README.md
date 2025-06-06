@@ -340,7 +340,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 I followed my mentor's tip and deployed my website early, after implementing the header. The steps to deploying a website on GitHub pages are:
 
-1. Open the [repository](https://github.com/smbiko/sneaker-quiz.git and go to the **Settings** tab.
+1. Open the [repository](https://github.com/smbiko/sneaker-quiz.git go to the **Settings** tab.
 2. Navigate to the **Pages** tab in the left menu.
 3. Choose **Deploy from a branch** and select the according branch, *main* in my case.
 4. Click save. The link to the deployed website can then be found in the [repository](https://github.com/smbiko/sneaker-quiz.git) on the right menu under **Environments**.
@@ -354,7 +354,7 @@ Thanks to my Code Institute Mentor Jubril Mentor for giving me valuable feedback
 ### **Content**
 
 - The content was written by myself and. using chatGPT  the images on the  .
--  I used [this You Tube tutorial](https://www.youtube.com/watch?v=XH5OW46yO8I) to learn how to create a modal for the how to play section.
+-  I used [ You Tube tutorial](https://www.youtube.com/watch?v=XH5OW46yO8I) to learn how to create a modal for the how to play section.
 - -  I used [Brain Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY) to learn how to create a modal for the how to play section.
 
 
